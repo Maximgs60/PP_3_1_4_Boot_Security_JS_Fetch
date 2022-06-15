@@ -9,4 +9,7 @@ public interface RoleService {
     Set<Role> getAllRoles();
 
     Role getRole(String role);
+
+    Boolean saveRole(Role role);
+
 }

@@ -46,6 +46,17 @@ public class User implements UserDetails {
         this.eMail = eMail;
     }
 
+    public User() {
+    }
+
+    public User(String firstName, String lastName, String eMail, Integer age, String password) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.eMail = eMail;
+        this.age = age;
+        this.password = password;
+    }
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return roles;
